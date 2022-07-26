@@ -20,7 +20,8 @@ jobs:
           token: ${{ env.pa5 }}
 
 
-      - run: |
+      - shell: cmd
+        run: |
           projectorrays-9cf6ee3.exe SceneFW.cxt SceneFW.cir
 
 
