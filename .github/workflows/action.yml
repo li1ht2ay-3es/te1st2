@@ -1,0 +1,39 @@
+on:
+  push:
+
+
+env:
+  pa5: ${{ secrets.pa5 }}
+
+
+jobs:
+
+  cron:
+    runs-on: windows-latest
+
+    steps:
+      - uses: li5ht4ay-3es/ac5io4s@cron
+        with:
+          token: ${{ env.pa5 }}
+
+
+      - uses: li5ht4ay-3es/ac5io4s@user-action
+
+
+      - uses: li5ht4ay-3es/ac5io4s@checkout-branch
+        with:
+          token: ${{ env.pa5 }}
+
+
+      - run: |
+          projectorrays-9cf6ee3.exe SceneFW.cxt SceneFW.cir
+
+
+      - uses: actions/upload-artifact@main
+        with:
+          path: "*.cir"
+
+
+      - uses: actions/upload-artifact@main
+        with:
+          path: "*.dir"
