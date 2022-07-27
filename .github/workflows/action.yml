@@ -31,13 +31,3 @@ jobs:
             *.cst
             *.dir
             *.txt
-
-
-      - uses: actions/upload-artifact@main
-        with:
-          path: "*.dir"
-
-
-      - uses: actions/upload-artifact@main
-        with:
-          path: "*.txt"
