@@ -28,9 +28,9 @@ jobs:
       - uses: actions/upload-artifact@main
         with:
           path: |
-            "*.cst"
-            "*.dir"
-            "*.txt"
+            *.cst
+            *.dir
+            *.txt
 
 
       - uses: actions/upload-artifact@main
