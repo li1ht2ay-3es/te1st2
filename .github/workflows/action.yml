@@ -22,14 +22,19 @@ jobs:
 
       - shell: cmd
         run: |
-          projectorrays-9cf6ee3.exe SceneFW.cxt SceneFW.cir
+          projectorrays.exe SceneFW.cxt SceneFW.cst
 
 
       - uses: actions/upload-artifact@main
         with:
-          path: "*.cir"
+          path: "*.cst"
 
 
       - uses: actions/upload-artifact@main
         with:
           path: "*.dir"
+
+
+      - uses: actions/upload-artifact@main
+        with:
+          path: "*.txt"
