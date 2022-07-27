@@ -22,7 +22,7 @@ jobs:
 
       - shell: cmd
         run: |
-          projectorrays-9cf6ee3.exe --dump-scripts --dump-chunks --dump-json SceneFW.cxt SceneFW.cst
+          projectorrays.exe --dump-scripts --dump-chunks --dump-json SceneFW.cxt SceneFW.cst
 
 
       - uses: actions/upload-artifact@main
