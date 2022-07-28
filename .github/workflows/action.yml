@@ -23,10 +23,11 @@ jobs:
 
       - shell: cmd
         run: |
-          projectorrays.exe --dump-scripts --dump-chunks --dump-json dirapi.cxt dirapi.cst
+          projectorrays.exe --dump-scripts --dump-chunks --dump-json scenefw.cct scenefw.1
 
 
       - uses: actions/upload-artifact@main
         with:
           path: |
             *.*
+            !*.exe
