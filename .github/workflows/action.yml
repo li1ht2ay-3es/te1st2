@@ -23,7 +23,7 @@ jobs:
 
       - shell: cmd
         run: |
-          projectorrays.exe --dump-scripts --dump-chunks --dump-json dirapi.cxt dirapi.cst
+          projectorrays.exe --dump-scripts --dump-chunks --dump-json project.cct project.1.cct
 
 
       - uses: actions/upload-artifact@main
