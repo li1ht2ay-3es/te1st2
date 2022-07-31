@@ -23,8 +23,6 @@ jobs:
 
       - shell: cmd
         run: |
-          # projectorrays.exe --dump-scripts --dump-chunks --dump-json project.cct project.1.cct
-          # projectorrays.exe --dump-scripts --dump-chunks --dump-json buzz1g.cct buzz1g.1.cct
           projectorrays.exe --dump-scripts --dump-chunks --dump-json dirapi.cct dirapi.1.cct
 
 
